@@ -5117,9 +5117,9 @@ __metadata:
   linkType: hard
 
 "@huggingface/tasks@npm:^0.11.2":
-  version: 0.11.9
-  resolution: "@huggingface/tasks@npm:0.11.9"
-  checksum: 615662bf4533ee460705d8d8dd9155769dffe431a758dff69d4aa9fff9a94539330b8451b0348643da5599e35589b72a0eacefac9e046a23bae731cf067425f2
+  version: 0.11.10
+  resolution: "@huggingface/tasks@npm:0.11.10"
+  checksum: efc4c6e8886e29963177884bb8ea1430d0392dbc994b13ebf226968a3c1ff0def56be68db4025ae7c614c8da0e5591dd51a5243d79871f6b81733e9624740c00
   languageName: node
   linkType: hard
 
@@ -6555,6 +6555,7 @@ __metadata:
     "@jest/globals": ^29.5.0
     "@langchain/core": ">=0.2.21 <0.3.0"
     "@langchain/scripts": ~0.0.20
+    "@langchain/standard-tests": 0.0.0
     "@swc/core": ^1.3.90
     "@swc/jest": ^0.2.29
     "@tsconfig/recommended": ^1.0.3
