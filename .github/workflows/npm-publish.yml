@@ -46,11 +46,12 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: langchain-google-genai
-      - run: ls -la
       - run: |
+          ls -la
           rm -rf .yarn
           rm -rf .yarnrc.yml
           rm -rf node_modules
+          ls -la
           npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
