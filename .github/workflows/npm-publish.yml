@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+      - run: echo ${PWD}
       - run: npm i
       - run: npm build
       - run: ls -la
