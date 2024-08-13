@@ -47,6 +47,10 @@ jobs:
         with:
           name: langchain-google-genai
       - run: ls -la
-      - run: npm publish --access=public
+      - run: |
+          rm -rf .yarn
+          rm -rf .yarnrc.yml
+          rm -rf node_modules
+          npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
