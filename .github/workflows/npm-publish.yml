@@ -23,8 +23,8 @@ jobs:
       - run: |
           cd ./libs/langchain-google-genai
           ls -la
-          sed "s/\@langchain\/google-genai/\@juji\/langchain-google-genai/" package.json > package.json
+          sed -i "s/\@langchain\/google-genai/\@juji\/langchain-google-genai/" package.json
           cat package.json
-          # npm publish --access=public
+          npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
