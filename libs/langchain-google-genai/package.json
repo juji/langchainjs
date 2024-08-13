@@ -1,5 +1,5 @@
 {
-  "name": "@langchain/google-genai",
+  "name": "@juji/langchain-google-genai",
   "version": "0.0.25",
   "description": "Google Generative AI integration for LangChain.js",
   "type": "module",
