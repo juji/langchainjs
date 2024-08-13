@@ -2,6 +2,14 @@
 
 This package contains the LangChain.js integrations for Gemini through their generative-ai SDK.
 
+## Update: Returns JSON
+```ts
+const model = new ChatGoogleGenerativeAI({
+  model: "gemini-1.5-flash",
+  json: true
+})
+```
+
 ## Installation
 
 ```bash npm2yarn
