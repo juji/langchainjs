@@ -8,10 +8,6 @@ on:
     branches:
       - mine
 
-defaults:
-  run:
-    working-directory: ./libs/langchain-google-genai
-
 jobs:
 
   publish-npm:
@@ -22,9 +18,9 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: echo ${PWD}
-      - run: npm i
-      - run: npm build
+      - run: yarn init
+      - run: yarn turbo:command build:internal --filter=@langchain/google-genai
+      - run: cd ./libs/langchain-google-genai
       - run: ls -la
       # - run: npm publish --access=public
         env:
