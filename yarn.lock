@@ -1635,11 +1635,11 @@ __metadata:
   linkType: hard
 
 "@azure/core-sse@npm:^2.0.0":
-  version: 2.1.2
-  resolution: "@azure/core-sse@npm:2.1.2"
+  version: 2.1.3
+  resolution: "@azure/core-sse@npm:2.1.3"
   dependencies:
     tslib: ^2.6.2
-  checksum: bfa0cdff625ee0871362edefa7b49436c95c0ea49d0725484916ed9a777b02e4b3ac47248cd1a358fcbafd160a81ca156b6e2d683ba9f5eb8e52d2b795a38ea9
+  checksum: 52b8b0851eba040d1359199b77a897868c93867ceb4fd8c23be784f3d1ed8294ea1f5d29958859ccb05174c2b84a2c1323a1148a0bd607994486e64d68f7ae8e
   languageName: node
   linkType: hard
 
@@ -6547,7 +6547,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@langchain/google-genai@^0.0.25, @langchain/google-genai@workspace:*, @langchain/google-genai@workspace:libs/langchain-google-genai":
+"@langchain/google-genai@npm:^0.0.25":
+  version: 0.0.25
+  resolution: "@langchain/google-genai@npm:0.0.25"
+  dependencies:
+    "@google/generative-ai": ^0.7.0
+    "@langchain/core": ">=0.2.21 <0.3.0"
+    zod-to-json-schema: ^3.22.4
+  checksum: 0119986f3f2c128c6eabf93ddc818fcc53773e91cc58154e416cbe9cefe15586e24776f21ca08d3a029701df1a1b8c45ce2c53c5d552a6df4566e08604e5bca9
+  languageName: node
+  linkType: hard
+
+"@langchain/google-genai@workspace:*, @langchain/google-genai@workspace:libs/langchain-google-genai":
   version: 0.0.0-use.local
   resolution: "@langchain/google-genai@workspace:libs/langchain-google-genai"
   dependencies:
@@ -25013,8 +25024,8 @@ __metadata:
   linkType: hard
 
 "openai@npm:^4.32.1, openai@npm:^4.41.1, openai@npm:^4.49.1, openai@npm:^4.55.0":
-  version: 4.55.5
-  resolution: "openai@npm:4.55.5"
+  version: 4.55.6
+  resolution: "openai@npm:4.55.6"
   dependencies:
     "@types/node": ^18.11.18
     "@types/node-fetch": ^2.6.4
@@ -25030,7 +25041,7 @@ __metadata:
       optional: true
   bin:
     openai: bin/cli
-  checksum: c83568d6be71996ea5f28314c90adf74063b5bed0f49f1f9d678b7644b0bb129ac81a2751a5182fb3964df6e8fe04f1e640d111eb8baf06d0d56ea1bd2c9af62
+  checksum: f818a624094c333d9a02e43b3b9c164b1cb3e717fa7bea33d92df904d5e610472ed5bc01397507d16d155f0bff018dece26fc2e85c7e7172ee1ae97016a510ba
   languageName: node
   linkType: hard
 
