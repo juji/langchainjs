@@ -4,10 +4,29 @@ This package contains the LangChain.js integrations for Gemini through their gen
 
 ## Update: Returns JSON
 ```ts
+import { ChatGoogleGenerativeAI } from "@juji/langchain-google-genai";
+import { JsonOutputParser } from "@langchain/core/output_parsers";
+
 const model = new ChatGoogleGenerativeAI({
   model: "gemini-1.5-flash",
   json: true
 })
+
+const messages = [
+  new SystemMessage(`
+Translate the following English text into Italian. 
+
+Reply with JSON, using the following JSON schema:
+{"translation": "string"}
+`),
+  new HumanMessage("hi, i am superman"),
+];
+
+const parser = new JsonOutputParser()
+const result = await model.pipe(parser).invoke(messages);
+console.log(result)
+
+// {"translation": "Ciao, sono Superman"}
 ```
 
 ## Installation
