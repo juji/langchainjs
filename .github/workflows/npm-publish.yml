@@ -19,6 +19,7 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: cd libs/langchain-google-genai
+      - run: npm i
       - run: npm build
       - run: ls -la
       # - run: npm publish --access=public
