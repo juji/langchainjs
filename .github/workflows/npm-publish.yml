@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: yarn init
+      - run: yarn install
       - run: yarn turbo:command build:internal --filter=@langchain/google-genai
       - run: cd ./libs/langchain-google-genai
       - run: ls -la
